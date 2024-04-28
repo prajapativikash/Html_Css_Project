@@ -1,0 +1,64 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   width: 100%;
+   height: 100%;
+   background-color: rgb(85, 80, 80);
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   padding: 3rem;
+
+}
+
+
+.item {
+   background-color: rgb(80, 80, 198);
+   border: 2px solid rgb(99, 88, 88);
+   padding: 4rem;
+   color: white;
+   text-align: center;
+}
+
+#RotateX:hover {
+   transform: rotateX(45deg);
+}
+
+#RotateY:hover {
+   transform: rotateY(-45deg);
+}
+
+#RotateZ:hover {
+   transform: rotateZ(45deg);
+}
+
+#TransalteX:hover {
+   /* positive value to  move right side and negative value to move left  side */
+   transform: translateX(45px);
+}
+
+#TransalteY:hover {
+   transform: translateX(-100px);
+}
+
+#TransalteZ:hover {
+   /* perspective means define the distance that the transform: ; */
+   transform: perspective(300px) translateZ(100px);
+}
+
+#scaleX:hover {
+   transform: scaleX(2);
+}
+
+#scaleY:hover {
+   transform: scaleY(2);
+}
+
+#scaleZ:hover {
+   transform: perspective(300px) scaleZ(5) rotate(45deg);
+
+}
